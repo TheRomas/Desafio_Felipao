@@ -1,0 +1,25 @@
+class Heroi:
+    def __init__(self, nome, idade, tipo):
+        self.nome = nome
+        self.idade = idade
+        self.tipo = tipo
+
+    def atacar(self):
+        if self.tipo == "mago":
+            ataque = "magia"
+        elif self.tipo == "guerreiro":
+            ataque = "espada"
+        elif self.tipo == "monge":
+            ataque = "artes marciais"
+        elif self.tipo == "ninja":
+            ataque = "shuriken"
+        else:
+            ataque = "ataque desconhecido"
+
+        mensagem = f"o {self.tipo} atacou usando {ataque}"
+        return mensagem
+
+heroi1 = Heroi("Dr.Strange", 1000, "mago")
+heroi2 = Heroi("Maximus", 550, "guerreiro")
+heroi3 = Heroi("Najib", 220, "monge")
+heroi4 = Heroi("Naruto", 140, "ninja")
